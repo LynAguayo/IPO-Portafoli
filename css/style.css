@@ -480,9 +480,163 @@ span {
 }
 
 /* -------------------------------------------------------------------
+   Section IPO: VideoCurriculum, Quote, Reflexiones y Referencias
+------------------------------------------------------------------- */
+.journey{
+    padding: 10rem 9%;
+    background-color: var(--bg-color);
+}
+
+.journey h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.media-card {
+    background-color: var(--bg-color);
+    border-radius: 3rem;
+    border: 1px solid var(--text-color);
+    box-shadow: 6px 6px 15px var(--main-color);
+    padding: 0rem 0rem 2rem;
+    width: 40rem;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.media-card:hover {
+    box-shadow: 6px 6px 15px var(--hover-color);
+    transform: scale(1.02);
+    border: 1px solid var(--hover-color);
+}
+
+.media-card img {
+    width: 100%;  
+    height: 20rem;  
+    object-fit: cover;  
+    border-radius: 2rem 0rem 0rem; 
+}
+
+.media-title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 1rem;
+    color: var(--main-color);
+}
+
+.media-description {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.quote-box {
+    text-align: center;
+    margin: 6rem auto;
+    font-size: 2rem;
+    max-width: 80rem;
+    color: #555;
+    font-style: italic;
+}
+
+.quote-box {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--text-color); 
+    background-color: var(--second-bg-color);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+}
+
+
+.reflection-box {
+    background-color: var(--bg-color);
+    padding: 4rem;
+    border-radius: 3rem;
+    max-width: 80rem;
+    margin: 0 auto 6rem auto;
+    box-shadow: 6px 6px 15px var(--main-color);
+}
+
+.reflection-box p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonials-container {
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 35rem;
+    box-shadow: 6px 6px 15px var(--main-color);
+    text-align: center;
+    font-style: italic;
+}
+
+.profile-avatar {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    transition: transform 0.3s;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.1);
+}
+
+.testimonial-text {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    color: var(--text-color);
+}
+
+.testimonial-name{
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------------
    Section CONTACT: Estilos para el formulario de contacto, incluyendo
    los campos de entrada, el diseño de la caja de entrada y el botón de envío
 ------------------------------------------------------------------- */
+.contact {
+    background-color: var(--second-bg-color);
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -505,7 +659,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 0.8rem;
     margin: 0.7rem 0;
 }
@@ -536,7 +690,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .footer-text p {
